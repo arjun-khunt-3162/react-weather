@@ -1,528 +1,528 @@
 const weatherIcons = {
   day: {
-    '200': {
+    200: {
       label: 'thunderstorm with light rain',
       icon: 'thunderstorm',
     },
-    '201': {
+    201: {
       label: 'thunderstorm with rain',
       icon: 'thunderstorm',
     },
-    '202': {
+    202: {
       label: 'thunderstorm with heavy rain',
       icon: 'thunderstorm',
     },
-    '210': {
+    210: {
       label: 'light thunderstorm',
       icon: 'lightning',
     },
-    '211': {
+    211: {
       label: 'thunderstorm',
       icon: 'lightning',
     },
-    '212': {
+    212: {
       label: 'heavy thunderstorm',
       icon: 'lightning',
     },
-    '221': {
+    221: {
       label: 'ragged thunderstorm',
       icon: 'lightning',
     },
-    '230': {
+    230: {
       label: 'thunderstorm with light drizzle',
       icon: 'thunderstorm',
     },
-    '231': {
+    231: {
       label: 'thunderstorm with drizzle',
       icon: 'thunderstorm',
     },
-    '232': {
+    232: {
       label: 'thunderstorm with heavy drizzle',
       icon: 'thunderstorm',
     },
-    '300': {
+    300: {
       label: 'light intensity drizzle',
       icon: 'sprinkle',
     },
-    '301': {
+    301: {
       label: 'drizzle',
       icon: 'sprinkle',
     },
-    '302': {
+    302: {
       label: 'heavy intensity drizzle',
       icon: 'rain',
     },
-    '310': {
+    310: {
       label: 'light intensity drizzle rain',
       icon: 'rain',
     },
-    '311': {
+    311: {
       label: 'drizzle rain',
       icon: 'rain',
     },
-    '312': {
+    312: {
       label: 'heavy intensity drizzle rain',
       icon: 'rain',
     },
-    '313': {
+    313: {
       label: 'shower rain and drizzle',
       icon: 'rain',
     },
-    '314': {
+    314: {
       label: 'heavy shower rain and drizzle',
       icon: 'rain',
     },
-    '321': {
+    321: {
       label: 'shower drizzle',
       icon: 'sprinkle',
     },
-    '500': {
+    500: {
       label: 'light rain',
       icon: 'sprinkle',
     },
-    '501': {
+    501: {
       label: 'moderate rain',
       icon: 'rain',
     },
-    '502': {
+    502: {
       label: 'heavy intensity rain',
       icon: 'rain',
     },
-    '503': {
+    503: {
       label: 'very heavy rain',
       icon: 'rain',
     },
-    '504': {
+    504: {
       label: 'extreme rain',
       icon: 'rain',
     },
-    '511': {
+    511: {
       label: 'freezing rain',
       icon: 'rain-mix',
     },
-    '520': {
+    520: {
       label: 'light intensity shower rain',
       icon: 'showers',
     },
-    '521': {
+    521: {
       label: 'shower rain',
       icon: 'showers',
     },
-    '522': {
+    522: {
       label: 'heavy intensity shower rain',
       icon: 'showers',
     },
-    '531': {
+    531: {
       label: 'ragged shower rain',
       icon: 'storm-showers',
     },
-    '600': {
+    600: {
       label: 'light snow',
       icon: 'snow',
     },
-    '601': {
+    601: {
       label: 'snow',
       icon: 'sleet',
     },
-    '602': {
+    602: {
       label: 'heavy snow',
       icon: 'snow',
     },
-    '611': {
+    611: {
       label: 'sleet',
       icon: 'rain-mix',
     },
-    '612': {
+    612: {
       label: 'shower sleet',
       icon: 'rain-mix',
     },
-    '615': {
+    615: {
       label: 'light rain and snow',
       icon: 'rain-mix',
     },
-    '616': {
+    616: {
       label: 'rain and snow',
       icon: 'rain-mix',
     },
-    '620': {
+    620: {
       label: 'light shower snow',
       icon: 'rain-mix',
     },
-    '621': {
+    621: {
       label: 'shower snow',
       icon: 'snow',
     },
-    '622': {
+    622: {
       label: 'heavy shower snow',
       icon: 'snow',
     },
-    '701': {
+    701: {
       label: 'mist',
       icon: 'showers',
     },
-    '711': {
+    711: {
       label: 'smoke',
       icon: 'smoke',
     },
-    '721': {
+    721: {
       label: 'haze',
       icon: 'day-haze',
     },
-    '731': {
+    731: {
       label: 'sand, dust whirls',
       icon: 'dust',
     },
-    '741': {
+    741: {
       label: 'fog',
       icon: 'day-fog',
     },
-    '751': {
+    751: {
       label: 'sand',
       icon: 'cloudy-gusts',
     },
-    '761': {
+    761: {
       label: 'dust',
       icon: 'dust',
     },
-    '762': {
+    762: {
       label: 'volcanic ash',
       icon: 'dust',
     },
-    '771': {
+    771: {
       label: 'squalls',
       icon: 'cloudy-gusts',
     },
-    '781': {
+    781: {
       label: 'tornado',
       icon: 'tornado',
     },
-    '800': {
+    800: {
       label: 'clear sky',
       icon: 'day-sunny',
     },
-    '801': {
+    801: {
       label: 'few clouds',
       icon: 'day-cloudy-gusts',
     },
-    '802': {
+    802: {
       label: 'scattered clouds',
       icon: 'day-cloudy-gusts',
     },
-    '803': {
+    803: {
       label: 'broken clouds',
       icon: 'day-cloudy-gusts',
     },
-    '804': {
+    804: {
       label: 'overcast clouds',
       icon: 'day-sunny-overcast',
     },
-    '900': {
+    900: {
       label: 'tornado',
       icon: 'tornado',
     },
-    '901': {
+    901: {
       label: 'tropical storm',
       icon: 'storm-showers',
     },
-    '902': {
+    902: {
       label: 'hurricane',
       icon: 'hurricane',
     },
-    '903': {
+    903: {
       label: 'cold',
       icon: 'snowflake-cold',
     },
-    '904': {
+    904: {
       label: 'hot',
       icon: 'hot',
     },
-    '905': {
+    905: {
       label: 'windy',
       icon: 'windy',
     },
-    '906': {
+    906: {
       label: 'hail',
       icon: 'hail',
     },
-    '951': {
+    951: {
       label: 'calm',
       icon: 'sunny',
     },
-    '952': {
+    952: {
       label: 'light breeze',
       icon: 'cloudy-gusts',
     },
-    '953': {
+    953: {
       label: 'gentle breeze',
       icon: 'cloudy-gusts',
     },
-    '954': {
+    954: {
       label: 'moderate breeze',
       icon: 'cloudy-gusts',
     },
-    '955': {
+    955: {
       label: 'fresh breeze',
       icon: 'cloudy-gusts',
     },
-    '956': {
+    956: {
       label: 'strong breeze',
       icon: 'cloudy-gusts',
     },
-    '957': {
+    957: {
       label: 'high wind, near gale',
       icon: 'strong-wind',
     },
-    '958': {
+    958: {
       label: 'gale',
       icon: 'cloudy-gusts',
     },
-    '959': {
+    959: {
       label: 'severe gale',
       icon: 'cloudy-gusts',
     },
-    '960': {
+    960: {
       label: 'storm',
       icon: 'thunderstorm',
     },
-    '961': {
+    961: {
       label: 'violent storm',
       icon: 'thunderstorm',
     },
-    '962': {
+    962: {
       label: 'hurricane',
       icon: 'cloudy-gusts',
     },
   },
   night: {
-    '200': {
+    200: {
       label: 'thunderstorm with light rain',
       icon: 'night-alt-thunderstorm',
     },
-    '201': {
+    201: {
       label: 'thunderstorm with rain',
       icon: 'night-alt-thunderstorm',
     },
-    '202': {
+    202: {
       label: 'thunderstorm with heavy rain',
       icon: 'night-alt-thunderstorm',
     },
-    '210': {
+    210: {
       label: 'light thunderstorm',
       icon: 'night-alt-lightning',
     },
-    '211': {
+    211: {
       label: 'thunderstorm',
       icon: 'night-alt-lightning',
     },
-    '212': {
+    212: {
       label: 'heavy thunderstorm',
       icon: 'night-alt-lightning',
     },
-    '221': {
+    221: {
       label: 'ragged thunderstorm',
       icon: 'night-alt-lightning',
     },
-    '230': {
+    230: {
       label: 'thunderstorm with light drizzle',
       icon: 'night-alt-thunderstorm',
     },
-    '231': {
+    231: {
       label: 'thunderstorm with drizzle',
       icon: 'night-alt-thunderstorm',
     },
-    '232': {
+    232: {
       label: 'thunderstorm with haeavy drizzle',
       icon: 'night-alt-thunderstorm',
     },
-    '300': {
+    300: {
       label: 'light intensity drizzle',
       icon: 'night-alt-sprinkle',
     },
-    '301': {
+    301: {
       label: 'drizzle',
       icon: 'night-alt-sprinkle',
     },
-    '302': {
+    302: {
       label: 'heavy intensity drizzle',
       icon: 'night-alt-rain',
     },
-    '310': {
+    310: {
       label: 'light intensity drizzle',
       icon: 'night-alt-rain',
     },
-    '311': {
+    311: {
       label: 'drizzle rain',
       icon: 'night-alt-rain',
     },
-    '312': {
+    312: {
       label: 'heavy intensity drizzle rain',
       icon: 'night-alt-rain',
     },
-    '313': {
+    313: {
       label: 'shower rain and drizzle',
       icon: 'night-alt-rain',
     },
-    '314': {
+    314: {
       label: 'heavy shower rain and drizzle',
       icon: 'night-alt-rain',
     },
-    '321': {
+    321: {
       label: 'shower drizzle',
       icon: 'night-alt-sprinkle',
     },
-    '500': {
+    500: {
       label: 'light rain',
       icon: 'night-alt-sprinkle',
     },
-    '501': {
+    501: {
       label: 'moderate rain',
       icon: 'night-alt-rain',
     },
-    '502': {
+    502: {
       label: 'heavy intensity rain',
       icon: 'night-alt-rain',
     },
-    '503': {
+    503: {
       label: 'very heavy rain',
       icon: 'night-alt-rain',
     },
-    '504': {
+    504: {
       label: 'extreme rain',
       icon: 'night-alt-rain',
     },
-    '511': {
+    511: {
       label: 'freezing rain',
       icon: 'night-alt-rain-mix',
     },
-    '520': {
+    520: {
       label: 'light intensity shower rain',
       icon: 'night-alt-showers',
     },
-    '521': {
+    521: {
       label: 'shower rain',
       icon: 'night-alt-showers',
     },
-    '522': {
+    522: {
       label: 'heavy intensity shower rain',
       icon: 'night-alt-showers',
     },
-    '531': {
+    531: {
       label: 'ragged shower rain',
       icon: 'night-alt-storm-showers',
     },
-    '600': {
+    600: {
       label: 'light snow',
       icon: 'night-alt-snow',
     },
-    '601': {
+    601: {
       label: 'snow',
       icon: 'night-alt-sleet',
     },
-    '602': {
+    602: {
       label: 'heavy snow',
       icon: 'night-alt-snow',
     },
-    '611': {
+    611: {
       label: 'sleet',
       icon: 'night-alt-rain-mix',
     },
-    '612': {
+    612: {
       label: 'light shower sleet',
       icon: 'night-alt-rain-mix',
     },
-    '615': {
+    615: {
       label: 'light rain and snow',
       icon: 'night-alt-rain-mix',
     },
-    '616': {
+    616: {
       label: 'rain and snow',
       icon: 'night-alt-rain-mix',
     },
-    '620': {
+    620: {
       label: 'light shower snow',
       icon: 'night-alt-rain-mix',
     },
-    '621': {
+    621: {
       label: 'shower snow',
       icon: 'night-alt-snow',
     },
-    '622': {
+    622: {
       label: 'heavy shower snow',
       icon: 'night-alt-snow',
     },
-    '701': {
+    701: {
       label: 'mist',
       icon: 'night-alt-showers',
     },
-    '711': {
+    711: {
       label: 'smoke',
       icon: 'smoke',
     },
-    '721': {
+    721: {
       label: 'haze',
       icon: 'day-haze',
     },
-    '731': {
+    731: {
       label: 'sand/dust whirls',
       icon: 'dust',
     },
-    '741': {
+    741: {
       label: 'fog',
       icon: 'night-fog',
     },
-    '761': {
+    761: {
       label: 'sand',
       icon: 'dust',
     },
-    '762': {
+    762: {
       label: 'dust',
       icon: 'dust',
     },
-    '781': {
+    781: {
       label: 'volcanic ash',
       icon: 'tornado',
     },
-    '800': {
+    800: {
       label: 'clear sky',
       icon: 'night-clear',
     },
-    '801': {
+    801: {
       label: 'cloudy gusts',
       icon: 'night-alt-cloudy-gusts',
     },
-    '802': {
+    802: {
       label: 'cloudy gusts',
       icon: 'night-alt-cloudy-gusts',
     },
-    '803': {
+    803: {
       label: 'cloudy gusts',
       icon: 'night-alt-cloudy-gusts',
     },
-    '804': {
+    804: {
       label: 'cloudy',
       icon: 'night-alt-cloudy',
     },
-    '900': {
+    900: {
       label: 'tornado',
       icon: 'tornado',
     },
-    '902': {
+    902: {
       label: 'hurricane',
       icon: 'hurricane',
     },
-    '903': {
+    903: {
       label: 'snowflake-cold',
       icon: 'snowflake-cold',
     },
-    '904': {
+    904: {
       label: 'hot',
       icon: 'hot',
     },
-    '906': {
+    906: {
       label: 'hail',
       icon: 'night-alt-hail',
     },
-    '957': {
+    957: {
       label: 'strong wind',
       icon: 'strong-wind',
     },
