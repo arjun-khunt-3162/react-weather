@@ -39,11 +39,11 @@ export default function App() {
   return (
     <div className="min-h-screen dark:bg-black">
       <Router>
-        <Routes>
-          <Route
-            path="/"
-            element={
-              <Layout>
+        <Layout>
+          <Routes>
+            <Route
+              path="/"
+              element={
                 <main>
                   <div className="w-5/6 mx-auto md:w-full xl:max-w-6xl 2xl:max-w-7xl">
                     <Search
@@ -63,12 +63,12 @@ export default function App() {
                     />
                   </div>
                 </main>
-              </Layout>
-            }
-          />
-          <Route path="/about/*" element={<About />} />
-        </Routes>
+              }
+            />
+            <Route path="/about/*" element={<About />} />
+          </Routes>
+        </Layout>
       </Router>
     </div>
-  );
+  );  
 }
