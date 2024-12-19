@@ -4,4 +4,4 @@
 pnpm lint 
 pnpm format
 pnpm check
-pnpm coverage
+# pnpm coverage

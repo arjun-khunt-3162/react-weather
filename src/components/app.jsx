@@ -8,6 +8,7 @@ import Search from './search';
 import ForecastCard from './forecast-card';
 import WeatherCard from './weather-card';
 import UnitsToggle from './units-toggle';
+import ReloadPrompt from './reloadprompt';
 
 const searchTimeoutInMs = 500;
 
@@ -68,6 +69,7 @@ export default function App() {
             <Route path="/about/*" element={<About />} />
           </Routes>
         </Layout>
+        <ReloadPrompt />
       </Router>
     </div>
   );  

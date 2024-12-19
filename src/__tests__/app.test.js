@@ -4,6 +4,10 @@ import App from '../components/app';
 
 jest.mock('lodash-es/debounce', () => jest.fn((fn) => fn));
 
+// jest.mock('virtual:pwa-register/react', () => ({
+//   useRegisterSW: jest.fn().mockReturnValue({ updateServiceWorker: jest.fn() })
+// }));
+
 describe('App', () => {
   test('renders a light theme by default', async () => {
     const user = userEvent.setup();
