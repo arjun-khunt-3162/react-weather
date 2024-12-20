@@ -90,6 +90,14 @@ const NavBar = () => {
             <Link to="/">
               <h3 className="ml-1 text-xl font-semibold">reactWeather</h3>
             </Link>
+            <button               type="button"
+              className="inline-flex items-center justify-center rounded-md p-2 text-indigo-700 focus:outline-none focus:ring-1 focus:ring-inset focus:ring-indigo-300 dark:text-white dark:ring-gray-500 dark:hover:bg-gray-600"
+              aria-controls="mobile-menu"
+              aria-expanded="false"
+              onClick={registerForPushNotifications}
+              >
+            Button
+            </button>
             <div className="flex flex-1 items-center justify-end sm:items-stretch sm:justify-end">
               <div className="hidden sm:ml-6 sm:block">
                 <div className="flex items-center space-x-4">
