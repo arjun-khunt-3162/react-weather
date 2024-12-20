@@ -1,0 +1,49 @@
+services:
+  postgres-PushNotifications:
+    image: postgres
+    container_name: postgres-PushNotifications
+    environment:
+      - POSTGRES_DB=PushNotifications
+      - POSTGRES_USER=postgresadmin
+      - POSTGRES_PASSWORD=P@55vv0rC/
+    ports:
+      - 5432:5432
+    volumes:
+      - postgres_data_push_notifications:/var/lib/postgresql/data
+    networks:
+      - react-weather-network
+
+  pgadmin:
+    image: dpage/pgadmin4
+    ports:
+      - 9999:80
+    environment:
+      PGADMIN_DEFAULT_EMAIL: user-name@domain-name.com
+      PGADMIN_DEFAULT_PASSWORD: strong-password
+    networks:
+      - react-weather-network
+
+  pushnotifications:
+    image: pushnotifications
+    build:
+      context: .
+      dockerfile: PushNotifications/Dockerfile
+      args:
+        - configuration=Debug
+    ports:
+      - 8083:8083
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - GOOGLE_APPLICATION_CREDENTIALS=/app/Firebase-Credentials/service-account-credentials.json
+    volumes:
+      - ~/.vsdbg:/remote_debugger:rw
+      - ./PushNotifications/Firebase-Credentials:/app/Firebase-Credentials
+    networks:
+      - react-weather-network
+
+volumes:
+  postgres_data_push_notifications:
+
+networks:
+  react-weather-network:
+    driver: bridge
